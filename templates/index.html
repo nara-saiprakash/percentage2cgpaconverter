@@ -1,63 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI Calculator</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        background: blueviolet;
-        text-align: center;
-        padding: 50px;
-      }
-      .container {
-        background: orchid;
-        padding: 30px;
-        border-radius: 5px;
-        border: 1px solid #6a861c;
-        box-shadow: 0 4px 10px red;
-        display: inline-block;
-      }
-      input {
-        padding: 10px;
-        margin: 10px;
-        width: 200px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-      }
-      button {
-        padding: 10px 20px;
-        background-color: aliceblue;
-        background: #4caf50;
-        border: none;
-        color: white;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      button:hover {
-        background: #7f1c86;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Percentage to CGPA Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
     <div class="container">
-      <h1>BMI Calculator</h1>
-      <form action="/predict" method="POST">
-        <input
-          type="number"
-          name="1"
-          placeholder="Enter Weight(kg) "
-          required
-        /><br />
-        <input
-          type="number"
-          name="2"
-          placeholder="Enter Height(cm)"
-          required
-        /><br />
-        <button type="Submit">Calculate BMI</button>
-      </form>
+        <h2>Percentage to CGPA Converter</h2>
+
+        <input type="number" id="percentage" placeholder="Enter Percentage" />
+
+        <button onclick="convertToCGPA()">Convert</button>
+
+        <p id="result"></p>
     </div>
-  </body>
+
+    <script src="script.js"></script>
+</body>
 </html>
