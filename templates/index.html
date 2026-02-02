@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Percentage to CGPA Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,11 +11,26 @@
     <div class="container">
         <h2>Percentage to CGPA Converter</h2>
 
-        <input type="number" id="percentage" placeholder="Enter Percentage" />
+        <label>Student Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
 
-        <button onclick="convertToCGPA()">Convert</button>
+        <label>Roll Number</label>
+        <input type="text" id="roll" placeholder="Enter roll number">
 
-        <p id="result"></p>
+        <label>Department</label>
+        <input type="text" id="dept" placeholder="Enter department">
+
+        <label>Percentage</label>
+        <input type="number" id="percentage" placeholder="Enter percentage">
+
+        <div class="buttons">
+            <button onclick="convertToCGPA()">Convert</button>
+            <button onclick="resetForm()" class="reset">Reset</button>
+        </div>
+
+        <div id="resultBox">
+            <p id="result"></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
